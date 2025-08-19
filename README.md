@@ -17,7 +17,7 @@ while True:
     image[:height//2, width//2:] = smaller_frame # frame placed in the UP Right corner
     image[height//2:, width//2:] = smaller_frame # frame placed in the Bottom Right corner
     
-    cv.imshow("WebCam",image) #replaced frame by image 
+    cv.imshow("WebCam",image) 
 
     if cv.waitKey(1) == ord("q"): #Waits for 1 milliseconds for the key to pressed, if no key is pressed the loop will keep on going giving a smooth video, but if we increase the number then the video will be slowed, and if we put 0 then the video will stay stop as it is(because the progrm will be freezed).
         break
